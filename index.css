@@ -1,0 +1,76 @@
+:root {
+    --gradient: linear-gradient(to right, #FFD200, #F7971E);
+    --gradient2: linear-gradient(to right, #bdc3c7, #2c3e50);
+    --gap: 16px;
+    --topbar: 50px;
+    --subtle-shadow: rgb(0 0 0 / 15%) 0px 2px 4px;
+    --color-btn: rgb(51, 51, 51);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/****************************/
+
+.accordion{
+    width: 100%;
+    border: none;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gap);
+}
+
+.accordion>.name{
+    font-size: 3vmin;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.accordion>.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.accordion>.icons>button{
+    background-color: transparent;
+    border: none;
+    font-size: 2vmin;
+    margin: 0 var(--gap);
+}
+
+/****************************/
+
+.panel{
+    padding: var(--gap);
+}
+
+.panel .form-wrapper.inline{
+    display: inline-block;
+}
+
+.panel .form-wrapper{
+    color: white;
+    padding: var(--gap);
+    background-color: #444;
+    margin-bottom: var(--gap);
+}
