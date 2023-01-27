@@ -1,0 +1,23 @@
+.topbar{
+    width: 100%;
+    height: var(--topbar);
+    box-shadow: var(--subtle-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.topbar>div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: var(--padding);
+    gap: var(--padding);
+}
+
+.topbar>div>*{
+    height: 100%;
+}

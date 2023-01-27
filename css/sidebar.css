@@ -1,0 +1,18 @@
+.sidebar{
+    height: 100%;
+    width: 12rem;
+    box-shadow: var(--subtle-shadow);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar>.controls{
+    padding: var(--padding);
+}
+
+.sidebar>.list{
+    height: 100%;
+}

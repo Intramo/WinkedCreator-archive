@@ -5,8 +5,12 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
     <script src="index.js" defer></script>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://kit.fontawesome.com/99501a977a.js" crossorigin="anonymous"></script>
 
@@ -24,134 +28,28 @@
 <body>
     <noscript>Diese Website braucht JavaScript</noscript>
 
-    <div class="question">
-        <div class="accordion">
-            <div class="name">Was passierte auf Mustafar? aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-            <div class="icons">
-                <button><i class="fa-solid fa-arrow-up"></i></button>
-                <button><i class="fa-solid fa-arrow-down"></i></button>
-                <button style="color: red"><i class="fa-regular fa-trash-can"></i></button>
+    <div class="topbar">
+        <div class="left">
+            <img src="assets/logo.svg">
+            <input type="text">
+        </div>
+        <div class="right">
+            <button>Laden</button>
+            <button>Speichern</button>
+        </div>
+    </div>
+
+    <div class="content-pane">
+
+        <div class="sidebar">
+            <div class="list">
+    
+            </div>
+            <div class="controls">
+                <button class="button">Frage hinzufügen</button>
             </div>
         </div>
-        <div class="panel">
-            <div class="form-wrapper">
-                <select name="Typ" onChange="panelOnSelectType(this)">
-                    <option value="---">---</option>
-                    <option value="quiz">Quiz</option>
-                    <option value="truefalse">Wahr / Falsch</option>
-                    <option value="text">Text</option>
-                    <option value="select">Auswählen</option>
-                </select>
-            </div>
 
-            <div class="tab ---" style="display: block;"></div>
-
-            <div class="tab quiz" style="display: none;">
-                <div class="form-wrapper">
-                    <label>Frage: </label><input type="text"><br>
-                    <label>Dauer: </label><input type="number"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>Medien:</h3>
-                    <label>Medien: </label><select><option value="none">Keine</option><option value="image">Bild</option><option value="video">YouTube Video</option></select><br>
-                    <label>URL: </label><input type="text"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>A:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>B:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>C:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>D:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-            </div>
-
-            <div class="tab truefalse" style="display: none;">
-                <div class="form-wrapper">
-                    <label>Frage: </label><input type="text"><br>
-                    <label>Ist die Frage richtig?: </label><input type="checkbox"><br>
-                    <label>Dauer: </label><input type="number"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>Medien:</h3>
-                    <label>Medien: </label><select><option value="none">Keine</option><option value="image">Bild</option><option value="video">YouTube Video</option></select><br>
-                    <label>URL: </label><input type="text"><br>
-                </div>
-            </div>
-
-            <div class="tab text" style="display: none;">
-                <div class="form-wrapper">
-                    <label>Frage: </label><input type="text"><br>
-                    <label>Dauer: </label><input type="number"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>Medien:</h3>
-                    <label>Medien: </label><select><option value="none">Keine</option><option value="image">Bild</option><option value="video">YouTube Video</option></select><br>
-                    <label>URL: </label><input type="text"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>Richtige Antworten(Mit Leerschritt getrennt): </h3>
-                    <input type="text"><br>
-                </div>
-            </div>
-
-            <div class="tab select" style="display: none;">
-                <div class="form-wrapper">
-                    <label>Frage: </label><input type="text"><br>
-                    <label>Dauer: </label><input type="number"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>Medien:</h3>
-                    <label>Medien: </label><select><option value="none">Keine</option><option value="image">Bild</option><option value="video">YouTube Video</option></select><br>
-                    <label>URL: </label><input type="text"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>A:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>B:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>C:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-
-                <div class="form-wrapper inline">
-                    <h3>D:</h3>
-                    <label>Antwort: </label><input type="text"><br>
-                    <label>Richtig: </label><input type="checkbox"><br>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 
