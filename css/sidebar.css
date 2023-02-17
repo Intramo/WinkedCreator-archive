@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .sidebar>.controls {
@@ -27,6 +28,8 @@
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding-inline-start: var(--padding);
+
+    overflow: scroll;
 }
 
 .sidebar>.list>li {

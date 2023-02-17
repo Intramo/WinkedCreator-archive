@@ -1,4 +1,4 @@
-.topbar{
+.window-topbar{
     width: 100%;
     height: var(--topbar);
     box-shadow: var(--subtle-shadow);
@@ -8,7 +8,7 @@
     flex-direction: row;
 }
 
-.topbar>div{
+.window-topbar>div{
     height: 100%;
     display: flex;
     align-items: center;
@@ -18,6 +18,6 @@
     gap: var(--padding);
 }
 
-.topbar>div>*{
+.window-topbar>div>*{
     height: 100%;
 }

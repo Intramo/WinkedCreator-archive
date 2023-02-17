@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/topbar.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/content.css">
+
+    <link rel="stylesheet" href="css/parent/pageHostAnswers.css">
 
     <script src="index.js" defer></script>
 
@@ -28,7 +31,7 @@
 <body>
     <noscript>Diese Website braucht JavaScript</noscript>
 
-    <div class="topbar">
+    <div class="window-topbar">
         <div class="left">
             <img src="assets/logo.svg">
             <input type="text">
@@ -52,6 +55,65 @@
             </ul>
             <div class="controls">
                 <button class="button">Frage hinzufügen</button>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="slide">
+                <div class="page pageHostAnswers normal media">
+                    <div class="bg bgHostBG">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="content">
+                        <div class="topbar">
+                            <div class="question"><span class="var-question">Auf welchem Planeten findet in 'Die Rache der Sith' das entscheidende Duell zwischen Anakin Skywalker und Obi-Wan Kenobi statt?</span></div>
+                            <button onclick="next()" class="button"><span data-key="next">Weiter</span></button>
+                        </div>
+            
+                        <div class="media">
+                            <span class="var-media-pageHostAnswersNormalMedia"></span>
+                        </div>
+            
+                        <div class="info">
+                            <div class="seconds">
+                                <div><span class="var-hostQuestionCountdown">0</span></div>
+                            </div>
+                            <div class="answers">
+                                <span class="var-answerAmount">0</span>
+                                <span data-key="answers">Antworten</span>
+                            </div>
+                        </div>
+            
+                        <div class="buttons">
+                            <button class="button btn-a disabled" id="pageHostAnswersNormalMedia-a">
+                                <div class="char">A</div>
+                                <div class="text"><span class="var-answerA">Mustafar</span></div>
+                            </button>
+                            <button class="button btn-b disabled" id="pageHostAnswersNormalMedia-b">
+                                <div class="char">B</div>
+                                <div class="text"><span class="var-answerB">Hoth</span></div>
+                            </button>
+                            <button class="button btn-c disabled" id="pageHostAnswersNormalMedia-c">
+                                <div class="char">C</div>
+                                <div class="text"><span class="var-answerC">Yavin 4</span></div>
+                            </button>
+                            <button class="button btn-d disabled" id="pageHostAnswersNormalMedia-d">
+                                <div class="char">D</div>
+                                <div class="text"><span class="var-answerD">Exegol</span></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
