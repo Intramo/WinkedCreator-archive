@@ -32,7 +32,7 @@
 .sidebar>.list>li {
     position: relative;
     margin-bottom: var(--padding);
-    transition: padding-top 0.2s;
+    transition: padding-top 0.5s;
     cursor: move;
 }
 
