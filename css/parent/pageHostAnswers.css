@@ -67,6 +67,22 @@
     object-fit: contain;
 }
 
+.pageHostAnswers .content>.media>span>.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 60vw;
+    max-height: 100%;
+    box-shadow: var(--subtle-shadow);
+    border-radius: 5px;
+    object-fit: contain;
+    border: 10px dashed white;
+    color: white;
+    font-size: 15vmin;
+}
+
 .pageHostAnswers .content>.media span:has(audio) {
     display: flex;
     align-items: center;
@@ -99,6 +115,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    border: none;
+    background-color: #00000036;
+    color: white;
 }
 
 .pageHostAnswers .content>.info {
@@ -145,6 +164,23 @@
     box-shadow: var(--subtle-shadow);
     color: white;
     font-size: 8vmin;
+}
+
+.pageHostAnswers .content>.info>.seconds>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageHostAnswers .content>.info>.seconds>div>input{
+    width: 72%;
+    height: 72%;
+    border: none;
+    background-color: #00000036;
+    color: white;
+    font-size: 5vmin;
 }
 
 /*********************************************************************/

@@ -57,3 +57,14 @@ function draggedQuestionInList_addDnDHandlers(elem) {
 var cols = document.querySelectorAll('#sidebar-list>*');
 [].forEach.call(cols, draggedQuestionInList_addDnDHandlers);
 
+
+
+/***********************************************************************/
+
+class QuestionNormal{
+    constructor(question, answer, answerA, answerB, answerC, answerD, answerAcorrect, answerBcorrect, answerCcorrect, answerDcorrect, duration){
+        this.question = question;
+        this.answer = answer;
+        this.id = id;
+    }
+}
