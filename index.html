@@ -59,63 +59,25 @@
         </div>
 
         <div class="content-wrapper">
-            <div class="slide">
-                <div class="page pageHostAnswers normal result">
-                    <div class="bg bgHostBG">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </div>
-                    <div class="content">
-                        <div class="topbar">
-                            <div class="question"><span class="var-question">Auf welchem Planeten findet in 'Die Rache der Sith' das entscheidende Duell zwischen Anakin Skywalker und Obi-Wan Kenobi statt?</span></div>
-                        </div>
-            
-                        <div class="media">
-                            <span class="var-media-pageHostAnswersNormalMedia">
-                                <span class="placeholder">+</span>
-                            </span>
-                        </div>
-            
-                        <div class="info">
-                            <div class="seconds">
-                                <div><input type="number" class="text"></div>
-                            </div>
-                        </div>
-            
-                        <div class="buttons">
-                            <button class="button btn-a disabled">
-                                <div class="char">A</div>
-                                <input type="text" class="text">
-                                <div class="statusIndicator"><img src="assets/indicatorWrong.svg"></div>
-                            </button>
-                            <button class="button btn-b disabled">
-                                <div class="char">B</div>
-                                <input type="text" class="text">
-                                <div class="statusIndicator"><img src="assets/indicatorWrong.svg"></div>
-                            </button>
-                            <button class="button btn-c disabled">
-                                <div class="char">C</div>
-                                <input type="text" class="text">
-                                <div class="statusIndicator"><img src="assets/indicatorWrong.svg"></div>
-                            </button>
-                            <button class="button btn-d disabled">
-                                <div class="char">D</div>
-                                <input type="text" class="text">
-                                <div class="statusIndicator"><img src="assets/indicatorWrong.svg"></div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
+            <label>Art der Antwort</label>
+            <select>
+                <option value="normal">Normal</option>
+                <option value="truefalse">Ja / Nein</option>
+                <option value="select">Auswählen</option>
+                <option value="text">Text</option>
+            </select>
+
+            <hr>
+
+            <label>Frage</label>
+            <input type="text" placeholder="Frage...">
+
+            <label>Zeit</label>
+            <input type="number">
+
+            <hr>
+            
         </div>
 
     </div>
